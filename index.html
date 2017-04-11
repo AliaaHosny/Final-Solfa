@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+    
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Solfa-index</title>
+
+        <!-- Vendors -->
+
+        <!-- Material design colors -->
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+
+        <!-- CSS animations -->
+        <link rel="stylesheet" href="vendors/bower_components/animate.css/animate.min.css">
+
+        <!-- Select2 - Custom Selects -->
+        <link rel="stylesheet" href="vendors/bower_components/select2/dist/css/select2.min.css">
+
+        <!-- Slick Carousel -->
+        <link rel="stylesheet" href="vendors/bower_components/slick-carousel/slick/slick.css">
+
+        <!-- NoUiSlider - Input Slider -->
+        <link rel="stylesheet" href="vendors/bower_components/nouislider/distribute/nouislider.min.css">
+
+        <!-- Site -->
+        <link rel="stylesheet" href="css/app_1.min.css">
+        <link rel="stylesheet" href="css/app_2.min.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- Page Loader JS -->
+        <script src="js/page-loader.min.js" async></script>
+    <script src='../../../google_analytics_auto.js'></script></head>
+
+    <body>
+        <!-- Start page loader -->
+        <div id="page-loader">
+            <div class="page-loader__spinner"></div>
+        </div>
+        <!-- End page loader -->
+
+        <header id="header">
+            <div class="header__top">
+                <div class="container">
+                    <ul class="top-nav">
+                        <li class="dropdown top-nav__guest pull-right">
+                            <a data-toggle="dropdown" href="#">Register</a>
+
+                            <form class="dropdown-menu stop-propagate">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email Address">
+                                    <i class="form-group__bar"></i>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                    <i class="form-group__bar"></i>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Confirm Password">
+                                    <i class="form-group__bar"></i>
+                                </div>
+
+                                <p><small>By Signing up with Solfa, you're agreeing to our <a href="#">terms and conditions</a>.</small></p>
+
+                                <button class="btn btn-primary btn-block m-t-10 m-b-10">Register</button>
+
+                                <div class="top-nav__auth">
+                                    <span>or</span>
+
+                                    <div>Sign in using</div>
+
+                                    <a href="#" class="mdc-bg-blue-500">
+                                        <i class="zmdi zmdi-facebook"></i>
+                                    </a>
+
+                                    <a href="#" class="mdc-bg-cyan-500">
+                                        <i class="zmdi zmdi-twitter"></i>
+                                    </a>
+
+                                    <a href="#" class="mdc-bg-red-400">
+                                        <i class="zmdi zmdi-google"></i>
+                                    </a>
+                                </div>
+
+                            </form>
+                        </li>
+
+                        <li class="dropdown top-nav__guest pull-right">
+                            <a data-toggle="dropdown" href="#" data-rmd-action="switch-login">Login</a>
+
+                            <div class="dropdown-menu">
+                                <div class="tab-content">
+                                    <form class="tab-pane active in fade" id="top-nav-login">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Email Address">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+
+                                        <button class="btn btn-primary btn-block m-t-10 m-b-10">Login</button>
+
+                                        <div class="text-center">
+                                            <a href="#top-nav-forgot-password" data-toggle="tab"><small>Forgot email/password?</small></a>
+                                        </div>
+
+                                        <div class="top-nav__auth">
+                                            <span>or</span>
+
+                                            <div>Sign in using</div>
+
+                                            <a href="#" class="mdc-bg-blue-500">
+                                                <i class="zmdi zmdi-facebook"></i>
+                                            </a>
+
+                                            <a href="#" class="mdc-bg-cyan-500">
+                                                <i class="zmdi zmdi-twitter"></i>
+                                            </a>
+
+                                            <a href="#" class="mdc-bg-red-400">
+                                                <i class="zmdi zmdi-google"></i>
+                                            </a>
+                                        </div>
+                                    </form>
+
+                                    <form class="tab-pane fade forgot-password" id="top-nav-forgot-password">
+                                        <a href="#top-nav-login" class="top-nav__back" data-toggle="tab"></a>
+
+                                        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Emaill Address">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+
+                                        <button class="btn btn-warning btn-block">Reset Password</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="pull-left top-nav__icon">
+                            <a href="#"> Arab <i class="zmdi zmdi-globe"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__main action-header2">
+                <div class="container">
+                    
+                    <a class="logo col-xs-4 " href="index.html">
+                        
+                        <div class="logo__text">
+                            <img src="img/logo.png">
+                        </div>
+                    </a>
+
+                    <div class="navigation-trigger visible-xs visible-sm" data-rmd-action="block-open" data-rmd-target=".navigation">
+                        <i class="zmdi zmdi-menu"></i>
+                    </div>
+
+                    <ul class="navigation col-xs-5">
+                        <li class="visible-xs visible-sm"><a class="navigation__close" data-rmd-action="navigation-close" href="#"><i class="zmdi zmdi-long-arrow-right"></i></a></li>
+
+                        <li class="active navigation__dropdown">
+                            <a href="index.html">Home</a>
+
+                            <ul class="navigation__drop-menu">
+                                <li><a href="after-login.html">After Login</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="prevent-default">Communites</a>
+                        </li>
+
+
+                        <li><a href="#">About</a></li>
+
+                       <!--  <li class="navigation__dropdown">
+                            <a href="mortgage.html">Mortgages</a>
+
+                            <ul class="navigation__drop-menu">
+                                <li><a href="mortgage-detail.html">Mortgage Detail</a></li>
+                                <li><a href="mortgage-detail-reviews.html">Mortgage Reviews</a></li>
+                                <li><a href="mortgage-detail-disclaimer.html">Mortgage Disclaimer</a></li>
+                            </ul>
+                        </li> -->
+                        <li >
+                            <a href="blog.html">Blogs</a>
+                        </li>
+
+                        <li >
+                             <div class="dropdown invite">
+                                <a href="#" data-toggle="dropdown"><i class="zmdi zmdi-share"></i></a>
+
+                                <div class="dropdown-menu pull-right rmd-share">
+                                    <div></div>
+                                </div>
+                           </div>
+                        </li>
+                    </ul>
+                    <div class="col-md-3 ">
+                        <ul class="social_links">
+                            <li class="pull-left top-nav__icon">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                        </li>
+                        <li class="pull-left top-nav__icon">
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                        </li>
+                        <li class="pull-left top-nav__icon">
+                            <a href="#"><i class="zmdi zmdi-google"></i></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__search container">
+                <form>
+                    <div class="search">
+                        <div class="search__type dropdown">
+                            <a href="#" data-toggle="dropdown">Rent</a>
+
+                            <div class="dropdown-menu">
+                                <div>
+                                    <input type="radio" name="property-type" value="rent">
+                                    <span>Rent</span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="property-type" value="change">
+                                    <span>Excahnge</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search__body">
+                            <input type="text" class="search__input" placeholder="What are you looking for" data-rmd-action="advanced-search-open">
+
+                            <div class="search__advanced">
+                               
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Category Type</label>
+
+                                        <select class="select2">
+                                            <option value="">Single Family Home</option>
+                                            <option value="">dresses</option>
+                                            <option value="">Accesories</option>
+                                            <option value="">Cars</option>
+                                            <option value="">Laptops</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-12 m-t-10">
+                                    <button class="btn btn-primary">Search</button>
+                                    <button class="btn btn-link" data-rmd-action="advanced-search-close">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="header__recommended">
+                <div class="my-location">
+                    <div class="dropdown my-location__location hidden-xs">
+                        <!-- <a href="#" data-toggle="dropdown"><i class="zmdi zmdi-pin"></i> San Francisco County, CA</a> -->
+                        <div class="my-location__title">
+                           <span>Our Featured Exclusives</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listings-grid">
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/1.jpg" alt="">
+                                <div class="listings-grid__price">Exchange</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>21 El Maadi,Cairo</small>
+                                <h5>Entrera Model 2010</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> Furniture</li>
+                               <!--  <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 02</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 02</li> -->
+                                <li><img src="img/demo/people/7.jpg" class="img-circle pull-right" style="width: 25px;"></li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/2.jpg" alt="">
+                                <div class="listings-grid__price">Rent</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>21 Giza,Egypt</small>
+                                <h5>car name and type</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> car</li>
+                                <li><img src="img/demo/people/4.jpg" class="img-circle pull-right" style="width: 25px;"></li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/3.jpg" alt="">
+                                <div class="listings-grid__price">Exchange</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>21 safa st, Mansoura</small>
+                                <h5>Galaxy note5</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--phone"></i> mobile accesories</li>
+                                <li><img src="img/demo/people/2.jpg" class="img-circle pull-right" style="width: 25px;"></li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/4.jpg" alt="">
+                                <div class="listings-grid__price">Rent</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>132 Lockslee, Cairo</small>
+                                <h5>Villa name</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bath"></i> Villa</li>
+                                <li><img src="img/demo/people/3.jpg" class="img-circle pull-right" style="width: 25px;"></li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/5.jpg" alt="">
+                                <div class="listings-grid__price">Exchange</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>21 moheb,Mahalla </small>
+                                <h5>Tosheba tv</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--tv"></i> television</li>
+                                <li><img src="img/demo/people/7.jpg" class="img-circle pull-right" style="width: 25px;"></li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/6.jpg" alt="">
+                                   <div class="listings-grid__price">Exchange</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>25 Gamat el dwal st , cairo</small>
+                                <h5>Dress</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--dress"></i>Woman dress</li>
+                                <li><img src="img/demo/people/6.jpg" class="img-circle pull-right" style="width: 25px;"></li>
+
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/7.jpg" alt="">
+                                <div class="listings-grid__price">Rent</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                 <small>21 El Maadi,Cairo</small>
+                                <h5>Entrera Model 2010</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> Furniture</li>
+                                <li><img src="img/demo/people/6.jpg" class="img-circle pull-right" style="width: 25px;"></li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/8.jpg" alt="">
+                                <div class="listings-grid__price">Exchange</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>25 Gamat el dwal st , cairo</small>
+                                <h5>kitchen</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i>Furniture </li>
+                                <li><img src="img/demo/people/6.jpg" class="img-circle pull-right" style="width: 25px;"></li>
+
+                            </ul>
+                        </a>
+
+                        <div class="listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="view-more" href="add-item.html">
+                 Add new  <i class="zmdi zmdi-long-arrow-right"></i>
+            </a>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <header class="section__title">
+                    <h2>8,243 Communites</h2>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card__header card__header--minimal">
+                                <h2>Recent Communites</h2>
+                                <small>Nunc urnami tempor eget ipsum eurutrum gravida tellus</small>
+                            </div>
+
+                            <div class="grid-widget grid-widget--listings">
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/9.jpg" alt="">
+
+                                        <div class="grid-widget__info">
+                                            <h3>Group-1 name</h3>
+                                            <ul class="listings-grid__attrs">
+                                             <li><img src="img/demo/people/1.jpg" class="img-circle" style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/2.jpg" class="img-circle " style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/3.jpg" class="img-circle " style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/4.jpg" class="img-circle" style="width: 25px;"></li>
+                                            </ul>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/10.jpg" alt="">
+
+                                        <div class="grid-widget__info">
+                                            <h3>Group-2 name</h3>
+                                            <ul class="listings-grid__attrs">
+                                             <li><img src="img/demo/people/5.jpg" class="img-circle" style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/6.jpg" class="img-circle " style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/3.jpg" class="img-circle " style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/4.jpg" class="img-circle" style="width: 25px;"></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/11.jpg" alt="">
+
+                                        <div class="grid-widget__info">
+                                            <h3>Group-3 name</h3>
+                                            <ul class="listings-grid__attrs">
+                                             <li><img src="img/demo/people/7.jpg" class="img-circle" style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/3.jpg" class="img-circle " style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/2.jpg" class="img-circle " style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/1.jpg" class="img-circle" style="width: 25px;"></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/12.jpg" alt="">
+
+                                        <div class="grid-widget__info">
+                                            <h3>Group-4 name</h3>
+                                            <ul class="listings-grid__attrs">
+                                             <li><img src="img/demo/people/4.jpg" class="img-circle" style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/6.jpg" class="img-circle " style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/7.jpg" class="img-circle " style="width: 25px;"></li>
+                                             <li><img src="img/demo/people/5.jpg" class="img-circle" style="width: 25px;"></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a class="view-more" href="community.html">
+                                View all Communites <i class="zmdi zmdi-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card tags-list">
+                            <div class="card__header">
+                                <h2>Categories</h2>
+                                <small>Nulla vitae elit libero, a pharetra augue</small>
+                            </div>
+                            <div class="card__body">
+                                <a href="#" class="tags-list__item">#Sollicitudin</a>
+                                <a href="#" class="tags-list__item">#Ultricies</a>
+                                <a href="#" class="tags-list__item">#Elit</a>
+                                <a href="#" class="tags-list__item">#Crastortor</a>
+                                <a href="#" class="tags-list__item">#Condimentum</a>
+                                <a href="#" class="tags-list__item">#Purus</a>
+                                <a href="#" class="tags-list__item">#Purus</a>
+                                <a href="#" class="tags-list__item">#Egestas</a>
+                                <a href="#" class="tags-list__item">#Loremipsum</a>
+                                <a href="#" class="tags-list__item">#Ridiculus</a>
+                                <a href="#" class="tags-list__item">#Ipsum</a>
+                                <a href="#" class="tags-list__item">#Consectetur</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container hidden-xs">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="footer__block">
+                            <a class="logo clearfix" href="#">
+                                <div class="logo__text">
+                                   <img src="img/logo.png">
+                                </div>
+                            </a>
+
+                            <address class="m-t-20 m-b-20 f-14">
+                                44-46 Maadi,
+                                Cairo
+                            </address>
+
+                            <div class="f-20">0062-345678910</div>
+                            <div class="f-14 m-t-5">hello@Support.com / info@Yackeen.com</div>
+
+                            <div class="f-20 m-t-20">
+                                <a href="#" class="m-r-10"><i class="zmdi zmdi-google"></i></a>
+                                <a href="#" class="m-r-10"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="footer__block footer__block--blog">
+                            <div class="footer__title">Latest from our blog</div>
+
+                            <a href="#">
+                                Aenean lacinia bibendum nulla sed
+                                <small>On 2017/06/20 at 6:00 PM</small>
+                            </a>
+                            <a href="#">
+                                Vestibulum id ligula porta felis euismod semper
+                                <small>On 2017/06/18 at 7:12 PM</small>
+                            </a>
+                            <a href="#">
+                                Etiam porta sem malesuada magna mollis euismod
+                                <small>On 2017/06/10 at 12:59 PM</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="footer__block">
+                            <div class="footer__title">Disclaimer</div>
+
+                            <div>Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="container">
+                    <span class="footer__copyright">© Y solution</span>
+
+                    <a href="#">About Us</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <div class="footer__to-top" data-rmd-action="scroll-to" data-rmd-target="html">
+                    <i class="zmdi zmdi-chevron-up"></i>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1>Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="ie-warning__inner">
+                    <ul class="ie-warning__download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>
+        <![endif]-->
+
+        <!-- Javascript -->
+
+        <!-- jQuery -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- Waves button ripple effects -->
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+
+        <!-- Select 2 - Custom Selects -->
+        <script src="vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
+
+        <!-- Slick Carousel - Custom Alerts -->
+        <script src="vendors/bower_components/slick-carousel/slick/slick.min.js"></script>
+
+        <!-- NoUiSlider -->
+        <script src="vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
+
+        <!-- jsSocials - Social link sharing -->
+        <script src="vendors/bower_components/jssocials/dist/jssocials.min.js"></script>
+
+        <!-- IE9 Placeholder -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+
+        <!-- Site functions and actions -->
+        <script src="js/app.min.js"></script>
+
+        <!-- Demo only -->
+        <script src="js/demo/demo.js"></script>
+
+        <!-- Main -->
+        <script src="js/main.js"></script>
+    </body>
+
+
+</html>
